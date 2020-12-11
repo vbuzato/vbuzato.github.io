@@ -31,15 +31,15 @@ module.exports = {
     complexity: ['off', 11],
     'jsx-a11y/label-has-associated-control': 'off',
     'jsx-a11y/label-has-for': 'off',
-    'no-magic-numbers': [
-      'error',
-      {
-        ignore: [1],
-        ignoreArrayIndexes: true,
-        enforceConst: true,
-        detectObjects: false,
-      },
-    ],
+    // 'no-magic-numbers': [
+    //   'error',
+    //   {
+    //     ignore: [1],
+    //     ignoreArrayIndexes: true,
+    //     enforceConst: true,
+    //     detectObjects: false,
+    //   },
+    // ],
     'react/button-has-type': [
       'error',
       {

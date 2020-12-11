@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
 export default function ProgressBar({ progress }) {
-  const THREE = 3;
+  const SIZE = 2.7;
   return (
     <div className="progress-bar">
       <div className="gray-bar" />
-      <div className="color-bar" style={ { width: `${progress * THREE}px` } } />
+      <div className="color-bar" style={ { width: `${progress * SIZE}px` } } />
     </div>
   );
 }

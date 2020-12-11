@@ -1,5 +1,6 @@
 // import { FiHexagon } from 'react-icons/fi';
-import IndexImage from '../images/foto_portfolio_vinicius.png';
+// import IndexImage from '../images/foto_portfolio_vinicius.png';
+import Typewriter from 'typewriter-effect';
 import ProgressBar from './ProgressBar';
 
 export default function Home() {
@@ -27,16 +28,28 @@ export default function Home() {
   return (
     <main className="wrap-content">
       <div className="index-text-box">
-        <h1 className="name main-color">Vinicius Buzato</h1>
-        <span className="red">()</span>
-        {' '}
-        <span className="blue">{'=>'}</span>
-        {' '}
-        <span className="yellow">{'{'}</span>
-        {' '}
-        <span className="sub-title">Desenvolvedor Front-End</span>
-        {' '}
-        <span className="yellow">{'}'}</span>
+        <div className="animated-text-home">
+          <Typewriter
+            onInit={ (typewriter) => {
+              typewriter.typeString('Seja bem vindo(a)!')
+                .callFunction(() => {
+                  console.log('String typed out!');
+                })
+                .pauseFor(2500)
+                .deleteAll()
+                .callFunction(() => {
+                  console.log('All strings were deleted');
+                })
+                .start();
+              typewriter.typeString('Sou Vinicius Buzato, Desenvolvedor front-end.')
+                .callFunction(() => {
+                  console.log('String typed out!');
+                })
+                .pauseFor(2500)
+                .start();
+            } }
+          />
+        </div>
         <section className="hard-skills">
           {Object.keys(skills).map((skill, index) => (
             <div key={ index } className="eachItem">
@@ -46,8 +59,9 @@ export default function Home() {
           ))}
         </section>
       </div>
-      <img src={ IndexImage } alt="img" width="893px" />
-
+      <div className="photo">
+        {/* <img src={ IndexImage } alt="img" width="800px" /> */}
+      </div>
     </main>
   );
 }

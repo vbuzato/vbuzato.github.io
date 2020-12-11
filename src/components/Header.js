@@ -1,26 +1,24 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-import { TiHome } from 'react-icons/ti';
-import { GrWorkshop } from 'react-icons/gr';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { FaGithub } from 'react-icons/fa';
+import { AiFillLinkedin } from 'react-icons/ai';
 
 export default function Header() {
   const iconSize = 20;
   return (
     <header>
-      <Link to="/" className="icons">
-        <TiHome size={ iconSize } />
-        {' '}
-        Home
-      </Link>
-      <Link to="/sobre" className="icons">
-        <BsFillPersonLinesFill size={ iconSize } />
-        Sobre
-      </Link>
-      <Link to="/projetos" className="icons">
-        <GrWorkshop size={ iconSize } />
-        Projetos
-      </Link>
+      {/* <h1 className="name">Vinicius Buzato</h1> */}
+      <div className="icons-header">
+        <a href="https://github.com/vbuzato" className="icons">
+          <FaGithub size={ iconSize } />
+          {' '}
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/viniciusbuzato/" className="icons">
+          <AiFillLinkedin size={ iconSize } />
+          LinkedIn
+        </a>
+      </div>
     </header>
   );
 }

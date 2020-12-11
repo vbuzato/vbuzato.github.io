@@ -40,10 +40,9 @@
 }
 
 .App {
-  /* text-align: center; */
-  background-color: #282c34;
-  background-color: #020105;
-  background-color: #0b001d;
+  /* background-color: #282c34; */
+  background: linear-gradient( #0b001d, #17003b);
+
 }
 
 header {
@@ -52,12 +51,13 @@ header {
   align-items: center;
   position: fixed;
   border-top: 2px solid var(--color1);
-  background-color: rgba(255, 255, 255, 0.062);
+  /* background-color: rgba(255, 255, 255, 0.062); */
+  /* background-color: #0b001d; */
   width: 100%;
   height: 50px;
 }
 
-header a {
+header div a {
   display: flex;
   align-items: center;
   margin: 0 10px;
@@ -70,16 +70,24 @@ header a {
   justify-content: space-around;
 }
 
-header a:hover {
+.icons-header {
+  width: 250px;
+  display: flex;
+  /* border: 1px solid white; */
+}
+
+header div a:hover {
   color: #74002d;
 }
 
 .wrap-content {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
-  align-items: flex-start;
-  padding: 80px;
+  /* align-items: flex-start; */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
 
 }
 
@@ -88,81 +96,77 @@ header a:hover {
 }
 
 .index-text-box {
-  width: 520px;
+  width: 440px;
   /* border: 1px solid rgb(179, 29, 29); */
-  text-align: right;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  /* text-align: right; */
+  /* margin-right: -100px; */
+  margin-top: 20px;
 }
 
-.sub-title{
-  color: var(--colorText1);
-  font-size: 30px;
-  margin: 0;
-  text-shadow: 1px 1px rgb(53, 53, 53);
+.animated-text-home {
+  color: white;
+  font-size: 40px;
+  font-family: 'Ubuntu', sans-serif;
+  width: 600px;
+  height: 90px;
+  border-left: 4px solid #cf0150;
+  /* margin-top: 10px; */
+  margin-bottom: 40px;
+  /* margin-left: 175px; */
+  margin-left: 30px;
+  padding-left: 20px;
+  /* font-family: 'Lato', sans-serif; */
 }
+
+/* .sub-title{
+  color: var(--colorText1);
+  font-size: 50px;
+  margin: 0;
+  text-shadow: 2px 2px #cf015085;
+  color: white;
+} */
 
 .name {
-  /* font-size: 70px; */
+  font-size: 35px;
+  color: white;
   /* line-height: 80px; */
-  margin: 0;
+  /* margin: 0; */
   /* text-shadow: 1px 1px rgb(233, 100, 133); */
+  left: 600px;
+  /* font-family: 'Caveat', cursive; */
+  font-weight: 500;
 }
 
 .hard-skills {
-  width: 700px;
-  border-radius: 5px;
-  /* color: #cf0150; */
+  width: 440px;
   color: #e8d4ff;
-  /* background: linear-gradient(45deg, #5054FF, rgb(162, 0, 255, 0.8)); */
-  margin-top: 50px;
-  /* padding: 10px; */
-  font-size: 16px;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* justify-content: space-between; */
+  /* margin-top: 50px; */
+  /* border: 1px solid rgba(0, 204, 255, 0.1); */
 }
 
 .eachItem {
   display: flex;
   align-items: center;
-  width: 550px;
-  /* border-bottom: 1px solid rgba(0, 204, 255, 0.1); */
+  width: 440px;
+  /* border: 1px solid rgba(0, 204, 255, 0.1); */
   /* border-bottom: 1px solid rgb(179, 29, 29, 0.1); */
-  
-
 }
 
 .skill-item {
-  width: 180px;
-  margin: 5px;
+  width: 160px;
+  margin: 3px;
   margin-right: 15px;
   /* border: 1px solid rgb(179, 29, 29); */
-}
-
-.red {
-  color: rgba(255, 0, 0, 0.3);
-}
-
-.blue {
-  color: rgba(13, 15, 155, 0.4);
-}
-
-.yellow {
-  color: rgba(128, 128, 128, 0.4);
-}
-
-.red,
-.blue, 
-.yellow {
-font-size: 25px;
+  font-size: 15px;
+  text-align: right;
 }
 
 footer {
   display: flex;
   align-items: center;
   border-top: 1px solid var(--colorText1);
-  background: linear-gradient(45deg, #5054FF, rgb(162, 0, 255, 0.9));
+  /* background: linear-gradient(45deg, #5054FF, rgb(162, 0, 255, 0.9)); */
+  background-color: rgb(0, 153, 158);
   width: 100%;
   padding: 20px;
 }
@@ -175,17 +179,19 @@ footer {
   fill: #74002d;
 }
 .progress-bar {
-  width: 400px;
+  width: 250px;
   height: 15px;
   position: relative;
 }
 .gray-bar {
-  width: 300px;
+  width: 250px;
   height: 10px;
   background: linear-gradient(45deg, rgb(97, 61, 255, 0.5), rgba(80, 32, 253, 0.0));
   /* background: linear-gradient(45deg, rgb(168, 168, 168), rgb(235, 235, 235, 0.2)); */
   position: absolute;
   z-index: 1;
+  border-radius: 5px;
+  margin-top: 2px;
 }
 
 .color-bar {
@@ -194,6 +200,9 @@ footer {
   background: linear-gradient(45deg, #5054FF, rgb(162, 0, 255, 0.9));
   position: absolute;
   z-index: 1;
+  border-right: 2px solid #cf0150;
+  border-radius: 5px;
+  margin-top: 2px;
 }
 
 .contact-form {
@@ -222,3 +231,24 @@ footer {
   color: rgb(179, 179, 179);
 }
 
+.photo {
+  width: 900px;
+  min-width: 650px;
+  height: 900px;
+  background: url('../src/images/foto_portfolio_vinicius.png') no-repeat center bottom;
+  background-size: contain;
+  margin-top: -250px;
+}
+
+.portfolio {
+  border-top: 2px solid #cf0150;
+  background-color: white;
+  padding: 20px;
+}
+
+.title {
+  font-size: 50px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 50px;
+  color: #0b001d;
+}
