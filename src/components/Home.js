@@ -2,6 +2,7 @@
 // import IndexImage from '../images/foto_portfolio_vinicius.png';
 import Typewriter from 'typewriter-effect';
 import ProgressBar from './ProgressBar';
+import BgVideo from './BgVideo';
 
 export default function Home() {
   const skills = {
@@ -27,11 +28,12 @@ export default function Home() {
   };
   return (
     <main className="wrap-content">
+      <BgVideo />
       <div className="index-text-box">
         <div className="animated-text-home">
           <Typewriter
             onInit={ (typewriter) => {
-              typewriter.typeString('Seja bem vindo(a)!')
+              typewriter.typeString('Seja bem-vindo(a)!')
                 .callFunction(() => {
                   console.log('String typed out!');
                 })
@@ -41,7 +43,8 @@ export default function Home() {
                   console.log('All strings were deleted');
                 })
                 .start();
-              typewriter.typeString('Sou Vinicius Buzato, Desenvolvedor front-end.')
+              typewriter
+                .typeString('Sou Vinicius Buzato, <br />Desenvolvedor front-end.')
                 .callFunction(() => {
                   console.log('String typed out!');
                 })
