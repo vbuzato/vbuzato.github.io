@@ -1,34 +1,34 @@
 // import { FiHexagon } from 'react-icons/fi';
 // import IndexImage from '../images/foto_portfolio_vinicius.png';
+// import { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
-import ProgressBar from './ProgressBar';
-import BgVideo from './BgVideo';
+import Header from '../components/Header';
+//
+import BgVideo from '../components/BgVideo';
 
 export default function Home() {
-  const skills = {
-    HTML5: 60,
-    CSS3: 60,
-    'Java Script ES6': 65,
-    'Git & GitHub': 60,
-    ReactJS: 60,
-    'React Redux': 40,
-    'React Hooks': 50,
-    'Shell Script': 20,
-    'React Testing Library': 30,
-    'Unix/Bash': 40,
-    Jest: 25,
-    ESLint: 60,
-    SQL: 10,
-    Python: 30,
-    Django: 10,
-    'React Native': 10,
-    C: 10,
-    WordPress: 20,
-    Photoshop: 60,
-  };
+  // const [mySkills, setmySkills] = useState(false);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     // setmySkills(true);
+  //   }, 7000);
+  // }, []);
+
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     const ramdomNumbers = 20;
+  //     document.querySelectorAll('.box-photo-home')[ramdomNumbers]
+  //       .style.background = 'transparent';
+  //   }, 1000);
+  // }, []);
   return (
     <main className="wrap-content">
       <BgVideo />
+      <div className="photo">
+        {/* <div className="box-photo-home" /> */}
+      </div>
+      <Header />
       <div className="index-text-box">
         <div className="animated-text-home">
           <Typewriter
@@ -53,18 +53,9 @@ export default function Home() {
             } }
           />
         </div>
-        <section className="hard-skills">
-          {Object.keys(skills).map((skill, index) => (
-            <div key={ index } className="eachItem">
-              <div className="skill-item">{skill}</div>
-              <ProgressBar progress={ skills[skill] } />
-            </div>
-          ))}
-        </section>
+
       </div>
-      <div className="photo">
-        {/* <img src={ IndexImage } alt="img" width="800px" /> */}
-      </div>
+
     </main>
   );
 }

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 export default function ProgressBar({ progress }) {
-  const SIZE = 2.7;
+  const SIZE = 2.5;
   return (
     <div className="progress-bar">
       <div className="gray-bar" />
