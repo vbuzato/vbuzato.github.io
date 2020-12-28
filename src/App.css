@@ -42,7 +42,7 @@
 .App {
   /* background-color: #282c34; */
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient( #0b001d, #17003b);
   color: white;
 }
@@ -212,6 +212,7 @@ header {
   /* border: 1px solid rgb(179, 29, 29); */
   font-size: 14px;
   text-align: right;
+  color: #dfdfff;
 }
 
 footer {
@@ -290,7 +291,6 @@ footer {
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  /* min-width: 650px; */
   height: 110%;
   background: url('../src/images/foto_portfolio_vinicius.png') no-repeat center bottom;
   background-size: contain;
@@ -298,13 +298,11 @@ footer {
   bottom: 0;
   left: 20%;
   z-index: 2;
-  /* margin-top: -250px; */
-}
-
-.portfolio {
-  border-top: 2px solid #cf0150;
-  background-color: white;
-  padding: 20px;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
 }
 
 .title {
@@ -326,15 +324,6 @@ footer {
   /* overflow: hidden; */
 }
 
-.box-photo-home {
-  /* position: relative; */
-  width: 100px;
-  height: 100px;
-  background-color: #17003b;
-  opacity: 0.7;
-  border-radius: 5px;
-}
-
 .about-photo {
   width: 100px;
   border-radius: 100%;
@@ -348,6 +337,7 @@ footer {
 
 .page-title{
   color: white;
+  color:#cf0150;
   letter-spacing: 2px;
   font-size: 60px;
   margin: 0;
@@ -360,34 +350,37 @@ footer {
 .about-content {
   box-sizing: border-box;
   width: 100%;
-  padding: 70px;
-  padding-top: 70px;
+  padding: 70px 70px 0 70px;
   text-align: justify;
-}
-
-.about-content p {
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 2s;
+  /* border: 1px solid rgb(0, 204, 255); */
 }
 
 .text-content {
+  /* width: 50%; */
+  display: block;
   padding-left: 30px;
   /* border-bottom: 1px solid var(--color1); */
   border-left: 4px solid #cf0150;
   /* letter-spacing: 1px; */
   /* margin-top: 20px; */
   line-height: 23px;
+  margin: 10px 0;
+  /* background-color: rgb(255, 255, 255);
+  color: #17003b; */
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+
 }
 
 .name {
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Ubuntu', sans-serif;
   float: right;
-  text-shadow: 2px 2px 1px #cf0150;
+  /* text-shadow: 1px 1px 1px #cf0150; */
 }
 
 .about {
@@ -395,11 +388,20 @@ footer {
   width: 100%;
 }
 
+.about-title-content-group{
+  box-sizing: border-box;
+  /* border: 1px solid rgb(0, 204, 255); */
+  width: 55%;
+  min-width: 500px;
+}
 .skills {
   box-sizing: border-box;
-  width: 100%;
-  padding: 20px 70px;
-  background-color: white;
+  /* width: 500px; */
+  width: 40%;
+  padding-top: 35px;
+  /* padding: 20px 70px; */
+  /* background-color: white; */
+  /* border: 1px solid rgb(0, 204, 255); */
 }
 
 .hard-skills {
@@ -408,11 +410,12 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  /* width: 30%; */
   color: #17003b;
   padding: 0 7%;
   margin-top: 10px;
   margin-bottom: 20px;
-  /* border: 1px solid rgba(0, 204, 255, 0.1); */
+  /* border: 1px solid rgb(0, 204, 255); */
   opacity: 1;
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
@@ -422,11 +425,17 @@ footer {
 
 @keyframes fadeInOpacity {
 	0% {
-		opacity: 0;
+    opacity: 0;
 	}
 	100% {
-		opacity: 1;
+    opacity: 1;
 	}
+}
+
+.group-about-skills {
+  display: flex;
+  justify-content: center space-around;
+  flex-wrap: wrap;
 }
 
 .page-subtitle {
@@ -441,7 +450,139 @@ footer {
   color:#aaaaaa;
 }
 
-.quot {
-  font-size: 40px;
-  float: left;
+.padd-l {
+  padding-left: 60px;
+}
+
+.standard-content {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 70px;
+}
+
+.job-box {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  /* margin: 0 auto; */
+  /* background: linear-gradient(to top, rgba(182, 151, 233, 0.027), transparent); */
+  /* background: linear-gradient(to left, rgba(217, 151, 233, 0.171), transparent); */
+  /* background: url('./images/foto_vinicius.png') no-repeat right; */
+  /* border-radius: 5px; */
+  /* margin: 20px 0; */
+  padding: 0 30px;
+  /* border-bottom: 1px solid #5053ff21; */
+  /* border-left: 4px solid #5053ff; */
+  border-left: 4px solid #cf0150;
+  margin-bottom: 60px;
+  /* background-color: white; */
+}
+
+.job-title {
+  width: 100%;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+
+.job-description {
+  /* display: block; */
+  line-height: 23px;
+  text-align: justify;
+}
+
+.job-desc-techs {
+  width: 60%;
+}
+
+.job-box-thumb {
+  display: flex;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  /* border: 1px solid #ff50934b; */
+  height: 200px;
+  background-color: black;
+}
+
+.job-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.job-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.bt-job-view {
+  width: 50%;
+  /* padding: 20px; */
+  height: 50px;
+  font-size: 14px;
+  /* border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px; */
+  /* border-radius: 10px; */
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.288);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.288); */
+  /* background-color: #17003b; */
+  /* background-color: #4d21ec; */
+  background-color: var(--color1);
+  color: rgb(224, 200, 255);
+  transition: 0.4s;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+}
+
+.bt-job-view:hover {
+  /* background-color: #731abb;
+  background-color: #5c2688; */
+  background-color: #331a8f;
+  /* background-color: #cf0150;
+  background-color: #cf0150; */
+  /* color: #410019; */
+  transition: 0.4s;  
+}
+
+.group-bts-thumb {
+  width: 32%;
+  margin-left: 70px;
+  margin-top: -25px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.137);
+  /* padding: 5px; */
+}
+
+.border-rad-bot-right {
+  border-bottom-right-radius: 5px;
+}
+
+.border-rad-bot-left {
+  border-bottom-left-radius: 5px;
+}
+
+.techs-box {
+  display: flex;
+}
+
+.used-tech {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  padding-right: 25px;
+  color: #b7b8ff;
+  /* font-size: 16px; */
+  /* border: 1px solid white; */
+}
+
+.tech {
+  padding-left: 10px;
 }

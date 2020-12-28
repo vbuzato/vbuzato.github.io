@@ -2,8 +2,6 @@
 // import IndexImage from '../images/foto_portfolio_vinicius.png';
 // import { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
-import Header from '../components/Header';
-//
 import BgVideo from '../components/BgVideo';
 
 export default function Home() {
@@ -25,10 +23,7 @@ export default function Home() {
   return (
     <main className="wrap-content">
       <BgVideo />
-      <div className="photo">
-        {/* <div className="box-photo-home" /> */}
-      </div>
-      <Header />
+      <div className="photo" />
       <div className="index-text-box">
         <div className="animated-text-home">
           <Typewriter

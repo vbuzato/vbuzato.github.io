@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-
 import { FaGithub } from 'react-icons/fa';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { useEffect } from 'react';
@@ -19,7 +18,6 @@ export default function Header() {
   }, []);
   return (
     <header>
-      {/* <h1 className="name">Vinicius Buzato</h1> */}
       <div className="menu">
         <Link to="/" className="menu-link">
           <span className="menu-slash">./</span>
@@ -29,9 +27,9 @@ export default function Header() {
           <span className="menu-slash">./</span>
           sobre
         </Link>
-        <Link to="/porfolio" className="menu-link">
+        <Link to="/portfolio" className="menu-link">
           <span className="menu-slash">./</span>
-          portfolio
+          portfólio
         </Link>
         <Link to="/contato" className="menu-link">
           <span className="menu-slash">./</span>
