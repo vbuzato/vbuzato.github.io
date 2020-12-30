@@ -37,12 +37,11 @@ export default function Header() {
         </Link>
       </div>
       <div className="icons-header">
-        <a href="https://github.com/vbuzato" className="icons">
+        <a href="https://github.com/vbuzato" className="icons" target="_blank" rel="noreferrer">
           <FaGithub size={ iconSize } />
-          {' '}
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/viniciusbuzato/" className="icons">
+        <a href="https://www.linkedin.com/in/viniciusbuzato/" className="icons" target="_blank" rel="noreferrer">
           <AiFillLinkedin size={ iconSize } />
           LinkedIn
         </a>

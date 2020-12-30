@@ -12,8 +12,8 @@ export default function Portfolio() {
         Portfólio
       </h1>
       <div className="job-box">
-        <h2 className="job-title">App de Receitas</h2>
         <div className="job-desc-techs">
+          <h2 className="job-title">App de Receitas</h2>
           <p className="job-description">
             Este projeto se trata de um app que tem como objetivo consumir uma API de
             receitas e disponizá-las aos usuários. Foram criadas diversas funcionalidades
@@ -68,8 +68,8 @@ export default function Portfolio() {
       </div>
 
       <div className="job-box">
-        <h2 className="job-title">Hackathon da NASA 2020</h2>
         <div className="job-desc-techs">
+          <h2 className="job-title">Hackathon da NASA 2020</h2>
           <p className="job-description">
             Este foi meu primeiro Hackathon, e o objetivo era demonstrar a funcionalidade
             de encontrar satélites próximos ao local definido no campo de busca. Neste
