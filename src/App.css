@@ -113,22 +113,39 @@ header {
   z-index: 3;
 }
 
+@media only screen and (max-width: 800px) {
+  .index-text-box {
+    justify-content: unset;
+  }
+}
+
 .animated-text-home {
   color: white;
   font-size: 40px;
   font-family: 'Ubuntu', sans-serif;
   width: 600px;
-  height: 90px;
+  /* height: 90px; */
   border-left: 4px solid #cf0150;
   letter-spacing: 2px;
-  margin-left: 100px;
+  margin-left: 20px;
   padding-left: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  .animated-text-home {
+    font-size: 1.2em;
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 40%;
+    padding-left: 15px;
+
+  }
 }
 
 .eachItem {
   display: flex;
   align-items: center;
-  width: 440px;
+  min-width: 300px;
 }
 
 .skill-item {
@@ -138,6 +155,15 @@ header {
   font-size: 14px;
   text-align: right;
   color: #dfdfff;
+}
+
+@media only screen and (max-width: 800px) {
+  .skill-item {
+    width: 90px;
+  }
+  /* .eachItem {
+    width: 100%;
+  } */
 }
 
 footer {
@@ -161,6 +187,7 @@ footer {
   height: 10px;
   position: relative;
 }
+
 .gray-bar {
   width: 250px;
   height: 5px;
@@ -169,6 +196,15 @@ footer {
   z-index: 1;
   border-radius: 5px;
   margin-top: 2px;
+}
+
+@media only screen and (max-width: 800px) {
+  .progress-bar {
+    width: 150px;
+  }
+  .gray-bar {
+    width: 150px;
+  }
 }
 
 .color-bar {
@@ -231,6 +267,14 @@ height: 120px;
   animation-duration: 2s;
 }
 
+@media only screen and (max-width: 800px) {
+  .photo {
+    width: 200%;
+    bottom: -10%;
+    left: -50%;
+  }
+}
+
 .title {
   font-size: 50px;
   font-family: 'Ubuntu', sans-serif;
@@ -272,6 +316,7 @@ height: 120px;
   text-align: justify;
 }
 
+
 .text-content {
   display: block;
   padding-left: 30px;
@@ -283,7 +328,6 @@ height: 120px;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 2s;
-
 }
 
 .name {
@@ -302,11 +346,30 @@ height: 120px;
   width: 55%;
   min-width: 200px;
 }
+
 .skills {
   box-sizing: border-box;
   width: 40%;
   padding-top: 35px;
 }
+
+@media only screen and (max-width: 800px) {
+  .about-content {
+    padding: 20px 20px 20px 20px;
+  }
+  .text-content {
+    border-left: 2px solid #cf0150;
+    padding-left: 15px;
+  }
+  .about-title-content-group{
+    width: 100%;
+  }
+  .skills {
+    width: 100%;
+  }
+}
+
+
 
 .hard-skills {
   box-sizing: border-box;
@@ -335,8 +398,9 @@ height: 120px;
 }
 
 .group-about-skills {
+  width: 100%;
   display: flex;
-  justify-content: center space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -497,11 +561,13 @@ height: 120px;
   width: 55%;
   margin-right: 50px;
   min-width: 300px;
+  text-align: center;
 }
 
 .text-contact {
   margin: 0 0 20px 0;
   letter-spacing: 1px;
+  text-align: left;
 }
 
 .contact-icon {
@@ -547,4 +613,8 @@ height: 120px;
 
 .error-msg {
   color: red;
+}
+
+.gif {
+  margin: 0 auto;
 }

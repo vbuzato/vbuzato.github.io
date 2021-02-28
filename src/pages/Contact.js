@@ -14,6 +14,7 @@ export default function Contact() {
             Olá! Você pode me enviar uma mensagem por aqui ou entrar
             em contato comigo através de uma das minhas redes.
           </p>
+          <img className="gif" src="https://media.giphy.com/media/SWVvc60hK5uDKEiIGL/giphy.gif" alt="gif" />
           <div className="contact-icons">
             <a href="https://tinyurl.com/y82urbse" target="_blank" rel="noreferrer">
               <FaWhatsapp size="40" className="contact-icon" />
