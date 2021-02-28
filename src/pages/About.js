@@ -1,32 +1,34 @@
-// import Photo from '../images/foto_vinicius.png';
 import ProgressBar from '../components/ProgressBar';
 
 export default function About() {
   const skills = {
     HTML5: 60,
     CSS3: 60,
-    JavaScript: 65,
+    JavaScript: 70,
     'Git & GitHub': 60,
     ReactJS: 60,
     'React Redux': 40,
-    'React Hooks': 50,
-    'Shell Script': 20,
-    'React Testing Library': 30,
-    'Unix/Bash': 40,
+    'React Context': 50,
+    NodeJS: 65,
+    Express: 60,
+    'API REST': 60,
+    SQL: 30,
+    MongoDB: 30,
+    'Jest/RTL': 30,
     Jest: 25,
     ESLint: 60,
-    SQL: 10,
     Python: 30,
     Django: 10,
     'React Native': 10,
     C: 10,
+    'Shell Script': 20,
+    'Unix/Bash': 40,
     WordPress: 20,
     Photoshop: 60,
   };
   return (
     <main className="about">
       <div className="about-content">
-        {/* <img src={ Photo } alt="vinicius Buzato" className="about-photo" /> */}
         <div className="group-about-skills">
           <div className="about-title-content-group">
             <h1 className="page-title">

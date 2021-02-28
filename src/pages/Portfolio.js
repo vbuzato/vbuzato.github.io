@@ -1,8 +1,10 @@
 import { FaReact, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { SiJavascript, SiJest } from 'react-icons/si';
+import { SiJavascript, SiJest, SiRedux } from 'react-icons/si';
 import AppReceitas from '../images/app-receitas.png';
 import AppReceitas2 from '../images/app-receitas2.png';
 import Nasa from '../images/hackathon-nasa.png';
+import Trivia from '../images/trivia-game.png';
+import TicTacToe from '../images/tic-tac-toe.png';
 
 export default function Portfolio() {
   return (
@@ -57,12 +59,99 @@ export default function Portfolio() {
             <img src={ AppReceitas2 } alt="App de Receitas" className="job-thumb" />
           </div>
           <div className="job-buttons">
-            <button type="button" className="bt-job-view border-rad-bot-left">
+            <a href="https://vbuzato.github.io/trivia-react-redux/" target="_blank" rel="noreferrer" className="bt-job-view border-rad-bot-left">
               Visualizar projeto
-            </button>
-            <button type="button" className="bt-job-view border-rad-bot-right">
+            </a>
+            <a href="https://vbuzato.github.io/trivia-react-redux/" target="_blank" rel="noreferrer" className="bt-job-view border-rad-bot-right">
               Ver código do projeto
-            </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="job-box">
+        <div className="job-desc-techs">
+          <h2 className="job-title">Trivia Game</h2>
+          <p className="job-description">
+            Trivia é um jogo de perguntas e respostas, estilo show do milhão. As
+            perguntas vem de uma API. Nesse projeto foi incluído áudio, filtros,
+            e utilizado redux para controlar o estado da aplicação. Também há uma
+            pontuação para cada rodada de perguntas e um ranking ao final do jogo.
+          </p>
+          <div className="techs-box">
+            <div className="used-tech">
+              <FaReact />
+              <span className="tech">ReactJS</span>
+            </div>
+            <div className="used-tech">
+              <SiRedux />
+              <span className="tech">Redux</span>
+            </div>
+            <div className="used-tech">
+              <SiJavascript />
+              <span className="tech">JavaScript</span>
+            </div>
+            <div className="used-tech">
+              <FaHtml5 />
+              <span className="tech">HTML</span>
+            </div>
+            <div className="used-tech">
+              <FaCss3Alt />
+              <span className="tech">CSS</span>
+            </div>
+          </div>
+        </div>
+        <div className="group-bts-thumb">
+          <div className="job-box-thumb">
+            <img src={ Trivia } alt="Trivia Game" className="job-thumb" />
+          </div>
+          <div className="job-buttons">
+            <a href="https://vbuzato.github.io/trivia-react-redux/" target="_blank" rel="noreferrer" className="bt-job-view border-rad-bot-left">
+              Visualizar projeto
+            </a>
+            <a href="https://github.com/vbuzato/trivia-react-redux" target="_blank" rel="noreferrer" className="bt-job-view border-rad-bot-right">
+              Ver código do projeto
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="job-box">
+        <div className="job-desc-techs">
+          <h2 className="job-title">Tic-Tac-Toe</h2>
+          <p className="job-description">
+            Fiz um simples jogo da velha para praticar e matar a curiosidade de criá-lo!
+          </p>
+          <div className="techs-box">
+            <div className="used-tech">
+              <FaReact />
+              <span className="tech">ReactJS</span>
+            </div>
+            <div className="used-tech">
+              <SiJavascript />
+              <span className="tech">JavaScript</span>
+            </div>
+            <div className="used-tech">
+              <FaHtml5 />
+              <span className="tech">HTML</span>
+            </div>
+            <div className="used-tech">
+              <FaCss3Alt />
+              <span className="tech">CSS</span>
+            </div>
+          </div>
+        </div>
+        <div className="group-bts-thumb">
+          <div className="job-box-thumb">
+            <img src={ TicTacToe } alt="Tic-Tac-Toe" className="job-thumb" />
+          </div>
+          <div className="job-buttons">
+            <a href="https://vbuzato.github.io/tic-tac-toe/" target="_blank" rel="noreferrer" className="bt-job-view border-rad-bot-left">
+              Visualizar projeto
+            </a>
+            <a href="https://github.com/vbuzato/tic-tac-toe" target="_blank" rel="noreferrer" className="bt-job-view border-rad-bot-right">
+              Ver código do projeto
+            </a>
           </div>
         </div>
       </div>
@@ -97,12 +186,12 @@ export default function Portfolio() {
             <img src={ Nasa } alt="Hackathon da NASA 2020" className="job-thumb" />
           </div>
           <div className="job-buttons">
-            <button type="button" className="bt-job-view border-rad-bot-left">
+            <a href="https://vbuzato.github.io/trivia-react-redux/" target="_blank" rel="noreferrer" className="bt-job-view border-rad-bot-left">
               Visualizar projeto
-            </button>
-            <button type="button" className="bt-job-view border-rad-bot-right">
+            </a>
+            <a href="https://vbuzato.github.io/trivia-react-redux/" target="_blank" rel="noreferrer" className="bt-job-view border-rad-bot-right">
               Ver código do projeto
-            </button>
+            </a>
           </div>
         </div>
       </div>

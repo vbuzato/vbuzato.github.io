@@ -1,25 +1,7 @@
-// import { FiHexagon } from 'react-icons/fi';
-// import IndexImage from '../images/foto_portfolio_vinicius.png';
-// import { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import BgVideo from '../components/BgVideo';
 
 export default function Home() {
-  // const [mySkills, setmySkills] = useState(false);
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     // setmySkills(true);
-  //   }, 7000);
-  // }, []);
-
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     const ramdomNumbers = 20;
-  //     document.querySelectorAll('.box-photo-home')[ramdomNumbers]
-  //       .style.background = 'transparent';
-  //   }, 1000);
-  // }, []);
   return (
     <main className="wrap-content">
       <BgVideo />
@@ -39,7 +21,7 @@ export default function Home() {
                 })
                 .start();
               typewriter
-                .typeString('Sou Vinicius Buzato, <br />Desenvolvedor front-end.')
+                .typeString('Sou Vinicius Buzato, <br />Desenvolvedor Full-Stack.')
                 .callFunction(() => {
                   console.log('String typed out!');
                 })
@@ -48,9 +30,7 @@ export default function Home() {
             } }
           />
         </div>
-
       </div>
-
     </main>
   );
 }
