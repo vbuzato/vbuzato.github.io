@@ -8,7 +8,7 @@ export default function Header() {
   useEffect(() => {
     const navigation = document.querySelector('header');
     const scrollNav = () => {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         navigation.style.background = '#000';
       } else {
         navigation.style.background = 'transparent';
