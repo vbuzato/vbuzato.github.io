@@ -114,10 +114,15 @@ export default function Portfolio() {
             <img src={ AppReceitas2 } alt="App de Receitas" className="job-thumb" />
           </div>
           <div className="job-buttons">
-            <a href="https://vbuzato.github.io/trivia-react-redux/" target="_blank" rel="noreferrer" className="bt-job-view border-rad-bot-left">
+            <a
+              href="https://recipes-app-vbuzato.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="bt-job-view border-rad-bot-left"
+            >
               Visualizar projeto
             </a>
-            <a href="https://vbuzato.github.io/trivia-react-redux/" target="_blank" rel="noreferrer" className="bt-job-view border-rad-bot-right">
+            <a href="https://github.com/vbuzato/sd-06-project-recipes-app" target="_blank" rel="noreferrer" className="bt-job-view border-rad-bot-right">
               Ver código do projeto
             </a>
           </div>
