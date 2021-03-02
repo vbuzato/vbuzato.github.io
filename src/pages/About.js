@@ -48,7 +48,7 @@ export default function About() {
               <br />
               Foi o que me perguntei depois de 9 anos de carreira na área da qualidade,
               na indústria automotiva. Estava estabilizado, mas não 100% feliz. Decidi
-              tranformar o hobbie, que me fazia viajar por horas atrás de soluções, em
+              transformar o hobbie, que me fazia viajar por horas atrás de soluções, em
               profissão. Decidi estudar desenvolvimento de software porque isso sempre
               esteve presente em minha vida, mas não na intensidade que eu desejava. Me
               planejei e pedi demissão da antiga vida para fazer o que mais gosto.
