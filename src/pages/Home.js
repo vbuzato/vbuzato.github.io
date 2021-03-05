@@ -1,10 +1,10 @@
 import Typewriter from 'typewriter-effect';
-import BgVideo from '../components/BgVideo';
+// import BgVideo from '../components/BgVideo';
 
 export default function Home() {
   return (
     <main className="wrap-content">
-      <BgVideo />
+      {/* <BgVideo /> */}
       <div className="photo" />
       <div className="index-text-box">
         <div className="animated-text-home">
