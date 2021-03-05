@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c52013b8.chunk.css",
-    "main.js": "/static/js/main.8ab90d6e.chunk.js",
-    "main.js.map": "/static/js/main.8ab90d6e.chunk.js.map",
+    "main.js": "/static/js/main.9c9f1bc7.chunk.js",
+    "main.js.map": "/static/js/main.9c9f1bc7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.80ac5969.js",
     "runtime-main.js.map": "/static/js/runtime-main.80ac5969.js.map",
     "static/js/2.a94c5f0a.chunk.js": "/static/js/2.a94c5f0a.chunk.js",
@@ -10,7 +10,6 @@
     "index.html": "/index.html",
     "static/css/main.c52013b8.chunk.css.map": "/static/css/main.c52013b8.chunk.css.map",
     "static/js/2.a94c5f0a.chunk.js.LICENSE.txt": "/static/js/2.a94c5f0a.chunk.js.LICENSE.txt",
-    "static/media/EnchantedIllegalAzurevasesponge-mobile.3baa96d6.mp4": "/static/media/EnchantedIllegalAzurevasesponge-mobile.3baa96d6.mp4",
     "static/media/app-receitas.3c190263.png": "/static/media/app-receitas.3c190263.png",
     "static/media/app-receitas2.be52d435.png": "/static/media/app-receitas2.be52d435.png",
     "static/media/bussolar1.784068b7.jpeg": "/static/media/bussolar1.784068b7.jpeg",
@@ -24,6 +23,6 @@
     "static/js/runtime-main.80ac5969.js",
     "static/js/2.a94c5f0a.chunk.js",
     "static/css/main.c52013b8.chunk.css",
-    "static/js/main.8ab90d6e.chunk.js"
+    "static/js/main.9c9f1bc7.chunk.js"
   ]
 }
