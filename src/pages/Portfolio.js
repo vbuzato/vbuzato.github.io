@@ -1,5 +1,7 @@
-import { FaReact, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { SiJavascript, SiJest, SiRedux } from 'react-icons/si';
+import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs } from 'react-icons/fa';
+import {
+  SiJavascript, SiJest, SiRedux, SiStyledComponents, SiMysql,
+} from 'react-icons/si';
 import AppReceitas from '../images/app-receitas.png';
 import AppReceitas2 from '../images/app-receitas2.png';
 import Bussolar from '../images/bussolar1.jpeg';
@@ -7,6 +9,8 @@ import Bussolar2 from '../images/bussolar2.jpeg';
 import Nasa from '../images/hackathon-nasa.png';
 import Trivia from '../images/trivia-game.png';
 import TicTacToe from '../images/tic-tac-toe.png';
+import Trybeer1 from '../images/trybeer1.jpeg';
+import Trybeer2 from '../images/trybeer2.jpeg';
 
 export default function Portfolio() {
   return (
@@ -15,6 +19,69 @@ export default function Portfolio() {
         <span className="title-slash">./</span>
         Portfólio
       </h1>
+
+      <div className="job-box">
+        <div className="job-desc-techs">
+          <h2 className="job-title">Projeto Trybeer</h2>
+          <p className="job-description">
+            Este é o delivery de bebidas Trybeer, desenvolvido na Trybe. Nesse projeto
+            foi desenvolvido Front-End e Back-End, com React, NodeJs e MySQL.
+          </p>
+          <div className="techs-box">
+            <div className="used-tech">
+              <FaReact />
+              <span className="tech">ReactJS</span>
+            </div>
+            <div className="used-tech">
+              <SiJavascript />
+              <span className="tech">JavaScript</span>
+            </div>
+            <div className="used-tech">
+              <FaHtml5 />
+              <span className="tech">HTML</span>
+            </div>
+            <div className="used-tech">
+              <FaCss3Alt />
+              <span className="tech">CSS</span>
+            </div>
+            <div className="used-tech">
+              <SiStyledComponents />
+              <span className="tech">Styled-Components</span>
+            </div>
+            <div className="used-tech">
+              <FaNodeJs />
+              <span className="tech">NodeJS</span>
+            </div>
+            <div className="used-tech">
+              <FaNodeJs />
+              <span className="tech">ExpressJS</span>
+            </div>
+            <div className="used-tech">
+              <SiMysql />
+              <span className="tech">MySQL</span>
+            </div>
+            <div className="used-tech">
+              <FaNodeJs />
+              <span className="tech">JWT WebToken</span>
+            </div>
+
+          </div>
+        </div>
+        <div className="group-bts-thumb">
+          <div className="job-box-thumb">
+            <img src={ Trybeer1 } alt="Trybeer" className="job-thumb" />
+            <img src={ Trybeer2 } alt="Trybeer" className="job-thumb" />
+          </div>
+          <div className="job-buttons">
+            <a href="https://www.linkedin.com/posts/viniciusbuzato_reactjs-nodejs-mysql-activity-6782491840835792897-jXm7" target="_blank" rel="noreferrer" className="bt-job-view border-rad-bot-left">
+              Visualizar demo
+            </a>
+            <a href="https://github.com/vbuzato/sd-06-trybeer/tree/main-group-10" target="_blank" rel="noreferrer" className="bt-job-view border-rad-bot-right">
+              Ver código do projeto
+            </a>
+          </div>
+        </div>
+      </div>
 
       <div className="job-box">
         <div className="job-desc-techs">
